@@ -1,0 +1,24 @@
+#初识循环
+'''a=0
+b=0
+while b<=100:
+    if b%2==0:
+        a+=b
+        b += 1
+print('一到一百之间的偶数和为：',a)'''
+'''b=0
+for a in range(0,101,2):
+    b+=a
+print(b)'''
+for _ in range(10):
+    print('我很帅')
+
+
+
+#1到1千的水仙数
+for a in range(100,1000):
+    b=a%10
+    c=a//10%10
+    d=a//100
+    if a==b**3+c**3+d**3:
+        print('水仙数为：',a)
