@@ -1,0 +1,9 @@
+for i in range(9):
+    for a in range(i):
+        print('*',end='\t')#\t使得每行*之间有空格
+    print()  #这个使得每次循环后可以跳到下一行 虽然不懂why
+
+for i in range(9):
+    for a in range(i):
+        print(i,'*',a,'=',a*i,end='\t')
+    print()
