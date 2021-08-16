@@ -1,3 +1,26 @@
+'''单分支结构 双分支结构 多分支结构'''
+#单分支
+money=1000
+a=int(input('请输入需要取出的金额\n'))
+if money>=a:
+    money=money-a
+    print('输出成功余额为',money)
+#双分支
+num=int(input('请输入一个整数\n'))
+if num%2==0:
+    print('偶数')
+else:
+    print('奇数')
+
+#多分支
+score=int(input('请输入成绩'))
+if score>=90 and score<=100:
+    print('A')
+elif 80<=score<=89: #python独有的表达方式
+    print('B')
+else:
+    print('C')
+
 #嵌套分支
 a=input('请问你是会员吗\n')
 b=int(input('此次消费金额\n'))
