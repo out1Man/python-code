@@ -1,0 +1,56 @@
+a=[98,'hello world']
+print(a[0])
+print(a[-1])
+a.append(80) #在列表中最后贴加一个元素
+print(a)
+b=[20,40,'heol']
+a.extend(b) #在列表最后贴加多个元素 且贴加的元素必须以列表形式
+print(a)
+print(a[2:5])
+a.insert(2,100) #在列表中任意一个位置贴加一个元素
+print(a)
+c=[500,60]
+a[4:]=c #切片 从原列表中某个位置开始全部替换为另外一个列表
+print(a)
+
+
+
+a=[10,4050,60,'llh',80]
+#a.remove(80)# 按名称删除一个元素
+#a.pop(1) #按索引删除一个元素
+'''切片操作
+b=a[2:4]'''
+a[1:6]=[]#删除某几个元素
+print(a)
+a.clear()#清空列表
+print(a)
+del a#删除列表
+b=[50,40,5,4,2,1]
+b[2]=40#按索引替换一个元素
+print(b)
+b[2:4]=[10,80,40,5]#替换若干个的元素 且无需对等
+print(b)
+
+
+
+
+
+#列表的排序
+a=[10,204,50,60]
+a.sort()#默认升序
+print(a)
+a.sort(reverse=True)#通过关键字使其降序
+print(a)
+#上述方法不改变列表
+#使用内置函数sorted() 但已改变列表 需再用一个变量
+b=sorted(a)
+print(b)
+c=sorted(b,reverse=True)
+print(c)
+
+
+
+
+#列表的生成公式
+a=[b*3-4 for b in range(1,10)]
+print(a)
