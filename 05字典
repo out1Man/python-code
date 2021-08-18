@@ -1,0 +1,29 @@
+#字典有键和值组成
+a={'张三':10,'李四':20}
+print(a)
+del a['张三']#删除某个元素
+a.clear()#清空
+a['张三']=100#增加元素
+a['王五']=60
+print(a)
+b=a.keys()
+print(b) #获取字典中的键
+c=a.values()
+print(c)#获取字典中的值
+d=a.items()
+print(d)#获取字典中的元组 以括号形式出现
+#字典的遍历
+for h in a:
+    print(h,a[h],a.get(h))
+
+#字典的特点 无序 key不能重复 value可以重复 key必须为不可变对象
+
+
+#字典的生成
+a=['lalaa','hehehe','heiheihei']
+b=[20,30,50,4,50,6]
+c={f:h*3  for f,h in zip(a,b)} #跟列表类似 前面是一个表达式
+print(c)
+
+
+
