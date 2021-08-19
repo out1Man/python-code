@@ -19,6 +19,7 @@ for h in a:
 #字典的特点 无序 key不能重复 value可以重复 key必须为不可变对象
 
 
+
 #字典的生成
 a=['lalaa','hehehe','heiheihei']
 b=[20,30,50,4,50,6]
